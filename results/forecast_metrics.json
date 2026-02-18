@@ -1,0 +1,31 @@
+{
+  "target_col": "AT_load_actual_entsoe_transparency",
+  "rows_train": 40301,
+  "rows_test": 10076,
+  "baseline_naive_24h": {
+    "mae": 528.812,
+    "rmse": 817.191
+  },
+  "random_forest": {
+    "n_estimators": 300,
+    "mae": 70.599,
+    "rmse": 103.674
+  },
+  "improvement_vs_baseline_pct": {
+    "mae": 86.65,
+    "rmse": 87.313
+  },
+  "feature_importance": {
+    "lag_1": 0.9330630815924668,
+    "hour": 0.0468997301438603,
+    "lag_24": 0.008372169883116362,
+    "dayofweek": 0.004152686538744145,
+    "roll_mean_24": 0.003329966547111545,
+    "roll_std_24": 0.002205997317457669,
+    "month": 0.0019763679772432188
+  },
+  "artifacts": {
+    "model_path": "models/forecast_model.joblib",
+    "predictions_path": "results/forecast_predictions.csv"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "input_csv": "data/processed/opsd_preprocessed.csv",
+  "output_csv": "results/anomalies.csv",
+  "model_path": "models/isolation_forest.joblib",
+  "target_col": "AT_load_actual_entsoe_transparency",
+  "contamination": 0.01,
+  "rows_analyzed": 50377,
+  "anomalies_detected": 504,
+  "anomaly_rate_pct": 1.0
+}
