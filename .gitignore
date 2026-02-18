@@ -13,3 +13,7 @@ env/
 
 # VSCode
 .vscode/
+
+# Archivos grandes
+data/raw/opsd_time_series_60min_singleindex.csv
+models/forecast_model.joblib
